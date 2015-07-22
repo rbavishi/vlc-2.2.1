@@ -1,0 +1,8 @@
+#! /bin/sh
+rm -f .error$$
+ERROR=0
+export PATH="/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/home/rbavishi/bin:/home/rbavishi/.local/bin:/home/rbavishi/bin:/home/rbavishi/bin" LANG=C
+(make V=1 $@ 2>&1 || touch .error$$)| ./extras/buildsystem/make.pl
+test -f .error$$ && ERROR=1
+rm -f .error$$
+exit $ERROR
