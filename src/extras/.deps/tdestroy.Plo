@@ -1,0 +1,11 @@
+extras/tdestroy.lo: extras/tdestroy.c /usr/include/stdc-predef.h \
+ ../config.h ../include/vlc_fixups.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.9.2/include/stddef.h
+
+/usr/include/stdc-predef.h:
+
+../config.h:
+
+../include/vlc_fixups.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.9.2/include/stddef.h:
